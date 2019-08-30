@@ -9,6 +9,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(line) {
-  if (line.length===0) {return ("The line is currently empty.")} else { return (`The line is currently`)
-}
+  var position =[];
+  for (let p=0; p<line.length; p++) {position.push(`${p+1}. ${katzDeliLine[p]}`);};
+  if (line.length===0) {return ("The line is currently empty.")} else {return (`The line is currently: ${position}`};
 }
