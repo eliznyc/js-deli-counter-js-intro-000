@@ -1,3 +1,6 @@
-function takeANumber(n, name) {
-    return ("Welcome, " + name + ". You are number " + (n+1) + " in line.")
+
+
+function takeANumber(katzDeliLine, name) {
+    katzDeliLine.push(name);
+    return ("Welcome, " + name + ". You are number " + (katzDeliLine.length+1) + " in line.")
 }
